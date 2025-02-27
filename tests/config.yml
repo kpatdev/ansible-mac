@@ -1,0 +1,13 @@
+---
+homebrew_installed_packages:
+  - uv
+  - nvm
+  - node
+  - bat
+  - eza
+
+homebrew_cask_apps:
+  - brave-browser
+  - visual-studio-code
+  - raycast
+  - notion

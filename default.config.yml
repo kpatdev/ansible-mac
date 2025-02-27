@@ -1,0 +1,169 @@
+---
+configure_dotfiles: false
+configure_macos: false
+
+# Set to 'true' to configure the Dock via dockutil.
+configure_dock: false
+dockitems_remove: []
+# - Launchpad
+# - TV
+# - Podcasts
+# - 'App Store'
+dockitems_persist: []
+# - name: "Sublime Text"
+#   path: "/Applications/Sublime Text.app/"
+#   pos: 5
+
+configure_sudoers: false
+sudoers_custom_config: ""
+# Example:
+# sudoers_custom_config: |
+#   # Allow users in admin group to use sudo with no password.
+#   %admin ALL=(ALL) NOPASSWD: ALL
+
+dotfiles_repo: https://github.com/kpatdev/dotfiles.git
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/Developer/dotfiles
+dotfiles_files:
+  - .zshrc
+  - .gitignore
+  - .inputrc
+  - .macos
+  - .vimrc
+
+homebrew_installed_packages:
+  - bat
+  - boost
+  - bottom
+  - cliclick
+  - direnv
+  - dua-cli
+  - exiftool
+  - eza
+  - fd
+  - fileicon
+  - fzf
+  - gh
+  - go
+  - grex
+  - iperf3
+  - jq
+  - lazygit
+  - mas
+  - neovim
+  - node
+  - nvm
+  - organize-tool
+  - pinentry-mac
+  - ripgrep
+  - rust
+  - smudge/smudge/nightlight
+  - speedtest-cli
+  - telnet
+  - tmux
+  - trippy
+  - ttyd
+  - uv
+  - wget2
+  - yazi
+  - zellij
+  - zoxide
+
+homebrew_taps: []
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - 1password
+  - 1password-cli
+  - adguard
+  - alt-tab
+  - applite
+  - balenaetcher
+  - barrier
+  - betterdisplay
+  - brave-browser
+  - discord
+  - font-meslo-lg-nerd-font
+  - google-chrome
+  - handbrake
+  - homerow
+  - iina
+  - jellyfin-media-player
+  - keka
+  - keyclu
+  - leader-key
+  - linearmouse
+  - localsend
+  - logi-options+
+  - lunasea
+  - microsoft-auto-update
+  - microsoft-excel
+  - microsoft-powerpoint
+  - microsoft-word
+  - namechanger
+  - notion
+  - obsidian
+  - pictogram
+  - plex
+  - pronotes
+  - qbittorrent
+  - rar
+  - raycast
+  - readdle-spark
+  - runelite
+  - sentinel-app
+  - spotify
+  - stats
+  - surfshark
+  - syncthing
+  - tailscale
+  - visual-studio-code
+  - warp
+  - wezterm
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+configure_mas: false
+mas_installed_apps:
+  - { id: 1546729687, name: "Auto HD FPS for YouTube" }
+  - { id: 6448461551, name: "Command X" }
+  - { id: 1381004916, name: "Discovery" }
+  - { id: 1463298887, name: "Userscripts-Mac-App" }
+  - { id: 1573461917, name: "SponsorBlock" }
+  - { id: 6444667067, name: "Hyperduck" }
+  - { id: 1559269364, name: "Notion Web Clipper" }
+  - { id: 6449873635, name: "Sink It for Reddit" }
+  - { id: 1611378436, name: "Pure Paste" }
+  - { id: 1606897889, name: "Consent-O-Matic" }
+  - { id: 937984704, name: "Amphetamine" }
+  - { id: 1569813296, name: "1Password for Safari" }
+  - { id: 6469021132, name: "PDFgear" }
+  - { id: 497799835, name: "Xcode" }
+  - { id: 360593530, name: "Notability" }
+  - { id: 1672085276, name: "Aiko" }
+  - { id: 1592844577, name: "Dark Night" }
+  - { id: 1355679052, name: "Dropover" }
+  - { id: 1591303229, name: "Vinegar" }
+  - { id: 1607635845, name: "Velja" }
+  - { id: 1440147259, name: "AdGuard for Safari" }
+  - { id: 1601151613, name: "Baking Soda" }
+  - { id: 1176895641, name: "Spark" }
+  - { id: 1519867270, name: "Refined GitHub" }
+mas_email: ""
+mas_password: ""
+
+macos_script: "~/.macos --no-restart"
+
+# Install packages from other package managers.
+# Note: You are responsible for making sure the required package managers are
+# installed, eg. through homebrew.
+npm_packages: []
+# - name: webpack
+#   state: present # present/absent/latest, default: present
+#   version: "^2.6" # default: N/A
+pip_packages: []
+# - name: mkdocs
+#   state: present # present/absent/latest, default: present
+#   version: "0.16.3" # default: N/A
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []
